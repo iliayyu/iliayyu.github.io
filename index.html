@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>集装箱出口流程-外贸海运出口操作全指南与步骤详解</title>
+    <meta name="description" content="深度解析集装箱出口流程，从订舱、装箱、报关到海运提单与目的港交货的全环节操作指南，帮助外贸新手与货代从业者系统掌握海运出口每一步骤及注意事项。">
+    <meta name="keywords" content="集装箱出口流程,海运出口,整箱出口,订舱,报关,装箱,货代,外贸操作,提单">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul, ol {
+            padding-left: 1.8rem;
+            margin: 0.5rem 0;
+        }
+        li {
+            margin-bottom: 0.3rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* 页眉 */
+        .site-header {
+            background-color: #0a3d62;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 4px solid #f39c12;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: #f39c12;
+        }
+        .header-contact {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            text-align: right;
+        }
+        /* 导航 */
+        .main-nav {
+            background-color: #0c4a6e;
+            border-bottom: 1px solid #155e8a;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-list li {
+            margin: 0;
+        }
+        .nav-list a {
+            display: block;
+            padding: 0.8rem 1.5rem;
+            color: #e2e8f0;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .nav-list a:hover, .nav-list a.active {
+            background-color: #f39c12;
+            color: #0a3d62;
+        }
+        /* 面包屑 */
+        .breadcrumb {
+            padding: 1rem 0 0;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        .breadcrumb a {
+            color: #0a3d62;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        /* 主布局 */
+        .main-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 2rem;
+            padding: 1.5rem 0 3rem;
+        }
+        .content-area {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem 2.2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .content-area h2 {
+            font-size: 1.6rem;
+            color: #0a3d62;
+            border-left: 5px solid #f39c12;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+        }
+        .content-area h2:first-child {
+            margin-top: 0.5rem;
+        }
+        .content-area h3 {
+            font-size: 1.2rem;
+            color: #1e4660;
+            margin: 1.5rem 0 0.8rem;
+        }
+        .content-area p {
+            margin-bottom: 1rem;
+        }
+        .intro {
+            background-color: #f0f6fc;
+            border-radius: 8px;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #0a3d62;
+        }
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+        .step-list li {
+            counter-increment: step-counter;
+            background: #fafcfd;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .step-list li::before {
+            content: counter(step-counter);
+            background-color: #0a3d62;
+            color: #fff;
+            font-weight: 700;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0.8rem;
+            top: 1.2rem;
+            font-size: 1rem;
+        }
+        .step-list strong {
+            color: #0a3d62;
+        }
+        .tip-box {
+            background-color: #fef9e7;
+            border: 1px solid #f1c40f;
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .info-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.2rem;
+            text-align: center;
+            border-bottom: 3px solid #0a3d62;
+        }
+        .info-card h4 {
+            color: #0a3d62;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .info-card p {
+            font-size: 0.9rem;
+            margin: 0;
+            color: #596f7f;
+        }
+        .table-wrap {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            min-width: 560px;
+        }
+        th {
+            background-color: #0a3d62;
+            color: #fff;
+            padding: 0.8rem 1rem;
+            text-align: left;
+        }
+        td {
+            border: 1px solid #e2e8f0;
+            padding: 0.8rem 1rem;
+            vertical-align: top;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        /* 侧边栏 */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .side-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .side-card h3 {
+            font-size: 1.1rem;
+            color: #0a3d62;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .side-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .side-card ul li {
+            padding: 0.4rem 0;
+            border-bottom: 1px dashed #e3e8ed;
+            display: flex;
+            align-items: baseline;
+            font-size: 0.95rem;
+        }
+        .side-card ul li:last-child {
+            border-bottom: none;
+        }
+        .side-card ul li::before {
+            content: "▸";
+            color: #f39c12;
+            margin-right: 0.6rem;
+            font-size: 1rem;
+        }
+        .side-card a:hover {
+            color: #f39c12;
+        }
+        .doc-list li {
+            cursor: pointer;
+        }
+        /* FAQ */
+        .faq-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            background: #fcfdfe;
+        }
+        .faq-item h4 {
+            color: #0a3d62;
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+        /* 页脚 */
+        .site-footer {
+            background-color: #0a1a2b;
+            color: #a8c0d0;
+            padding: 2rem 0 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .footer-col h4 {
+            color: #f39c12;
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+        .footer-col p {
+            margin-bottom: 0.4rem;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #1c3f5c;
+            margin-top: 2rem;
+            color: #7f9db0;
+        }
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .main-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .side-card {
+                flex: 1 1 45%;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            .header-contact {
+                text-align: left;
+            }
+            .nav-list a {
+                padding: 0.6rem 0.9rem;
+                font-size: 0.9rem;
+            }
+            .content-area {
+                padding: 1.2rem;
+            }
+            .content-area h2 {
+                font-size: 1.3rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .sidebar {
+                flex-direction: column;
+            }
+            .side-card {
+                flex: 1 1 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .nav-list {
+                flex-direction: column;
+                width: 100%;
+            }
+            .nav-list a {
+                border-bottom: 1px solid #155e8a;
+            }
+            .step-list li {
+                padding-left: 3rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <h1>环球<span>货运通</span></h1>
+        </div>
+        <div class="header-contact">
+            <p>📞 服务热线：400-800-1234</p>
+            <p>✉️ info@shipping-guide.cn</p>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">出口流程</a></li>
+            <li><a href="#">订舱指南</a></li>
+            <li><a href="#">报关知识</a></li>
+            <li><a href="#">物流资讯</a></li>
+            <li><a href="#">工具下载</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="breadcrumb">
+        <a href="#">首页</a> &gt; <span>外贸指南</span> &gt; <span>集装箱出口流程</span>
+    </div>
+</div>
+
+<main class="container main-wrapper">
+    <!-- 主要内容 -->
+    <section class="content-area">
+        <h1 style="font-size: 1.8rem; color: #0a3d62; margin-bottom: 0.5rem;">集装箱出口流程</h1>
+        <p style="color: #687a86; margin-bottom: 1.5rem;">外贸人必读：从接单到交单的完整操作手册</p>
+
+        <div class="intro">
+            <p><strong>集装箱出口流程</strong>是指将货物装入集装箱并通过海运方式运往国外目的地的全过程。对于外贸业务员、跟单员和货代操作人员来说，系统掌握这一流程是顺利开展出口业务的核心能力。本指南将为你拆解从备货、订舱到最终结汇的每一个关键节点，帮助你规避常见风险，提升操作效率。</p>
+        </div>
+
+        <h2>一、集装箱出口流程总览</h2>
+        <p>一个完整的集装箱出口业务通常涉及卖方（出口商）、买方（进口商）、货运代理、船公司、报关行、海关及目的港代理等多方参与。虽然实际操作中会因贸易术语（如FOB、CIF、EXW）不同而有所调整，但核心作业链条基本一致。整体而言，可归纳为以下主要阶段：</p>
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>备货与订舱</h4>
+                <p>工厂生产备货，向船公司或货代预定舱位</p>
+            </div>
+            <div class="info-card">
+                <h4>装箱与拖运</h4>
+                <p>使用整箱或拼箱方式，将货物运送至港口</p>
+            </div>
+            <div class="info-card">
+                <h4>报关与查验</h4>
+                <p>向海关申报出口，配合查验及放行</p>
+            </div>
+            <div class="info-card">
+                <h4>装船与出运</h4>
+                <p>货物装船，确认提单并跟踪船舶动态</p>
+            </div>
+            <div class="info-card">
+                <h4>交单与结汇</h4>
+                <p>整理单据，按信用证或T/T要求结算货款</p>
+            </div>
+        </div>
+        <p>下面我们按照实际操作的时间顺序，逐一拆解每一步的具体内容与操作要点。</p>
+
+        <h2>二、出口前准备与订舱</h2>
+        <h3>1. 备货与核对</h3>
+        <p>在确定出口订单后，工厂需要按合同要求组织生产或采购。此阶段务必核对：</p>
+        <ul>
+            <li><strong>货物规格、数量、包装</strong>是否符合合同及进口国要求；</li>
+            <li><strong>唛头（Shipping Mark）</strong>是否按照客户要求制作；</li>
+            <li><strong>交货期</strong>是否留有足够的订舱和运输缓冲时间；</li>
+            <li>是否需要办理商检、植检、熏蒸等法定检验手续。</li>
+        </ul>
+
+        <h3>2. 选择货运代理或直接订舱</h3>
+        <p>出口商可根据自身贸易条款选择由买方指定货代（FOB条件下）或自行委托货代（CIF/CFR条件下）。订舱时需要提供的关键信息包括：</p>
+        <ul>
+            <li>起运港与目的港（需确认是否直达或中转）</li>
+            <li>预计开船日期（ETD）与预计到港日期（ETA）</li>
+            <li>货物品名（中英文）、件数、毛重、体积</li>
+            <li>集装箱类型（20GP、40GP、40HQ、冷藏箱、开顶箱等）及数量</li>
+            <li>特殊要求（如危险品、超大件、船公司偏好等）</li>
+        </ul>
+        <div class="tip-box">
+            <strong>💡 经验提示：</strong> 订舱前建议先向货代或船公司确认目的港是否有额外限制（如木制包装需熏蒸证明），以免货物到港后产生不必要的费用或延误。旺季时舱位紧张，应至少提前10-15天订舱。
+        </div>
+
+        <h3>3. 获取订舱确认与提柜单</h3>
+        <p>船公司确认舱位后，会发放订舱确认（Booking Confirmation）及提柜单（Container Release Order）。货代或车队凭此单据前往指定堆场提取空箱，并安排装货。</p>
+
+        <h2>三、装箱作业与拖车运输</h2>
+        <h3>1. 整箱（FCL）与拼箱（LCL）的选择</h3>
+        <p>如果货物体积能够装满一个集装箱（通常20GP约28立方，40HQ约68立方），建议采用整箱运输，成本更低且操作更灵活。若货物不足一个整箱，则可采用拼箱方式，由货代安排与其他货主的货物合装一个集装箱。</p>
+
+        <h3>2. 装箱方式</h3>
+        <ul>
+            <li><strong>工厂装箱（拖装）：</strong> 空柜拖到工厂或仓库，在工厂内完成装柜，然后由拖车送至码头。适合货物较重、装卸时间灵活或需要工人协助装柜的情况。</li>
+            <li><strong>仓库装箱（内装）：</strong> 将货物先运至货代或港区附近的仓库，由仓库安排装箱。适合散货拼箱、需要验货或使用码头装箱服务的情况。</li>
+        </ul>
+        <p>装箱时需注意货物重心平衡、避免超重、做好防潮固定。装箱完成后，需记录实际装箱数量、封条号（Seal No.），并拍摄装柜照片留档。</p>
+
+        <h2>四、出口报关操作</h2>
+        <p>报关是出口流程中最关键的合规环节。目前中国出口报关普遍采用无纸化方式，通过中国国际贸易单一窗口进行申报。</p>
+        <h3>1. 报关所需核心资料</h3>
+        <ul>
+            <li>发票（Commercial Invoice）</li>
+            <li>装箱单（Packing List）</li>
+            <li>合同（Sales Contract）</li>
+            <li>报关委托书/电子委托</li>
+            <li>申报要素（品名、品牌、型号、用途、材质等）</li>
+            <li>其他监管证件（如出口许可证、通关单等）</li>
+        </ul>
+        <h3>2. 申报与查验</h3>
+        <p>报关行在收到资料后，会通过系统向海关申报。海关系统审核通过后，若显示“放行”，则货物可正常装船；若显示“查验”，则需配合海关进行开箱检查。查验可能涉及核对品名、数量、申报价值以及是否涉及侵权或违禁品。查验无问题后，海关予以放行。</p>
+        <div class="tip-box">
+            <strong>⚠️ 注意：</strong> 如实申报是基本原则。低报价格、瞒报品名一旦被查验发现，不仅会导致货物扣留、罚款，还可能影响企业海关信用等级，务必杜绝侥幸心理。
+        </div>
+
+        <h2>五、装船与提单确认</h2>
+        <h3>1. 码头操作与装船</h3>
+        <p>报关放行后，码头安排将集装箱吊装上船。货代需及时向船公司确认配载信息，并获取实际开船时间。</p>
+        <h3>2. 提单（Bill of Lading）确认</h3>
+        <p>提单是物权凭证，也是出口结汇的核心单据。开船后，船公司会出具提单草稿，发货人或货代需仔细核对以下内容：</p>
+        <ul>
+            <li>发货人（Shipper）、收货人（Consignee）和通知方（Notify Party）信息</li>
+            <li>船名航次、起运港、目的港</li>
+            <li>货物描述、件数、毛重、体积</li>
+            <li>运费支付方式（预付/到付）</li>
+            <li>正本提单份数或电放指示</li>
+        </ul>
+        <p>提单确认无误后，船公司签发正本提单（若为电放，则签署电放保函）。近年来，越来越多的船公司支持电子提单（eBL），操作更为便捷环保。</p>
+
+        <h2>六、后续跟踪与交单结汇</h2>
+        <h3>1. 货物跟踪与到港通知</h3>
+        <p>货物出运后，货代或发货人需跟踪船舶动态，及时向收货人发送装运通知（Shipping Advice），告知预计到港时间，以便买方准备清关及提货事宜。若发生船期延误、中转异常等情况，也应第一时间通知相关方。</p>
+
+        <h3>2. 交单与结汇</h3>
+        <p>根据合同约定的付款方式（常见为T/T电汇或L/C信用证），出口商需准备全套议付单据。信用证结算下，通常需要：</p>
+        <ul>
+            <li>商业发票、装箱单、海运提单</li>
+            <li>原产地证明（CO、FORM E等）</li>
+            <li>保险单（CIF条件下）</li>
+            <li>其他信用证要求的单据（如受益人证明、装运通知副本等）</li>
+        </ul>
+        <p>确保单据完全符合信用证条款（“单证相符”）是安全收汇的关键。任何不符点都可能导致银行拒付。因此，制单时必须极其严谨。</p>
+
+        <h2>七、常见问题与注意事项</h2>
+        <div class="faq-item">
+            <h4>Q1: FOB条款下，卖方还需要负责订舱和支付海运费吗？</h4>
+            <p>不需要。FOB（船上交货）下，订舱和海运费的支付责任由买方承担。但实际操作中，买方通常会指定其合作货代，卖方只需配合将货物送至指定码头并完成出口报关即可。不过，卖方仍需关注装船日期，避免产生不必要的仓储费。</p>
+        </div>
+        <div class="faq-item">
+            <h4>Q2: 集装箱超重会有什么后果？</h4>
+            <p>各船公司和码头对集装箱总重（货物+箱重）有严格限制。超重可能导致无法上船、产生额外超重费，甚至在目的港被拒绝卸货。装柜前务必确认船公司限重，并确保拖车运输符合道路限重法规。</p>
+        </div>
+        <div class="faq-item">
+            <h4>Q3: 电放提单和正本提单有什么区别？</h4>
+            <p>电放是指发货人向船公司申请不签发纸质正本提单，而是通过电子方式授权目的港代理放货给收货人。电放速度更快、无遗失风险，但通常适用于信任度较高的贸易伙伴或需要快速提货的场景。正本提单是传统物权凭证，通过银行流转或快递寄送，更适合信用证结算。</p>
+        </div>
+        <div class="faq-item">
+            <h4>Q4: 如果目的港收货人迟迟不提货怎么办？</h4>
+            <p>货物到港后通常有免堆期（Free Time），超过期限会产生高额滞箱费和堆存费。若收货人长期不联系，货代应积极联系发货人，确认是否转卖、退运或弃货。必要时可申请拍卖，但需遵守目的港当地法律。因此，发货前做好客户资信调查尤为重要。</p>
+        </div>
+
+        <h2>八、总结与实用建议</h2>
+        <p>集装箱出口流程虽然环节较多，但只要抓住<strong>“货、证、船、单”</strong>四条主线，就能做到心中有数：</p>
+        <ul>
+            <li><strong>货：</strong> 备货、验货、装箱要留足时间，杜绝仓促出错。</li>
+            <li><strong>证：</strong> 商检、产地证、熏蒸证等各类证书提前办理，并核对有效期。</li>
+            <li><strong>船：</strong> 订舱、确认开船、跟踪到港，保持信息畅通。</li>
+            <li><strong>单：</strong> 提单、发票、箱单等单据严格复核，确保与合同和信用证一致。</li>
+        </ul>
+        <p>建议外贸企业建立标准操作流程（SOP）和内部审核机制，每次出货后复盘总结，逐步形成适合自身产品的操作体系。同时，与靠谱的货代建立长期合作关系，在遇到突发状况时，一个好的合作伙伴能帮你省去大量麻烦。</p>
+
+        <div class="table-wrap">
+            <h3>附：常用集装箱参数参考（标准干货箱）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>箱型</th>
+                        <th>内尺寸（长×宽×高）</th>
+                        <th>约容积</th>
+                        <th>最大载重（约）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20GP（20尺普柜）</td>
+                        <td>5.90m × 2.35m × 2.39m</td>
+                        <td>28 立方米</td>
+                        <td>28,000 kg</td>
+                    </tr>
+                    <tr>
+                        <td>40GP（40尺普柜）</td>
+                        <td>12.03m × 2.35m × 2.39m</td>
+                        <td>58 立方米</td>
+                        <td>26,500 kg</td>
+                    </tr>
+                    <tr>
+                        <td>40HQ（40尺高柜）</td>
+                        <td>12.03m × 2.35m × 2.69m</td>
+                        <td>68 立方米</td>
+                        <td>26,000 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.85rem; color: #7f8c8d;">*实际数据以船公司公布为准，装箱时请务必确认限重。</p>
+        </div>
+    </section>
+
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+        <div class="side-card">
+            <h3>出口流程分类</h3>
+            <ul>
+                <li><a href="#">整箱出口操作指南</a></li>
+                <li><a href="#">拼箱出口注意事项</a></li>
+                <li><a href="#">危险品出口流程</a></li>
+                <li><a href="#">冷藏集装箱出口</a></li>
+                <li><a href="#">退运货物处理</a></li>
+                <li><a href="#">出口报关单填制规范</a></li>
+            </ul>
+        </div>
+        <div class="side-card">
+            <h3>常用工具文档</h3>
+            <ul class="doc-list">
+                <li>📄 订舱委托书模板</li>
+                <li>📄 装箱单模板</li>
+                <li>📄 商业发票模板</li>
+                <li>📄 电放保函模板</li>
+                <li>📄 出口货物报关单样例</li>
+                <li>📄 提单确认函模板</li>
+            </ul>
+        </div>
+        <div class="side-card">
+            <h3>热门物流资讯</h3>
+            <ul>
+                <li><a href="#">2025年主要航线运价走势</a></li>
+                <li><a href="#">红海绕行对亚欧航线的影响</a></li>
+                <li><a href="#">海关HS编码调整最新通知</a></li>
+                <li><a href="#">多国港口罢工风险预警</a></li>
+                <li><a href="#">外贸单证常见差错TOP10</a></li>
+            </ul>
+        </div>
+        <div class="side-card">
+            <h3>服务支持</h3>
+            <p style="font-size: 0.9rem; color: #4a5f6a;">如您需要一对一的出口流程咨询，欢迎联系我们的专业顾问。</p>
+            <p style="margin-top: 0.8rem; font-weight: 600; color: #0a3d62;">☎ 400-800-1234</p>
+            <p style="font-size: 0.9rem;">周一至周五 9:00 - 18:00</p>
+        </div>
+    </aside>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>环球货运通</h4>
+                <p>专注于国际海运与外贸流程知识分享，为进出口企业及从业者提供实用、可靠的业务指南。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <p><a href="#">关于我们</a></p>
+                <p><a href="#">合作企业</a></p>
+                <p><a href="#">人才招聘</a></p>
+                <p><a href="#">隐私政策</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <p>地址：上海市浦东新区航运路88号</p>
+                <p>电话：400-800-1234</p>
+                <p>邮箱：info@shipping-guide.cn</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 环球货运通. 本网站内容仅供学习参考，实际业务操作请以最新法规及船公司规定为准。</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+                  </html>
