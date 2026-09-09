@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入党志愿书表格-规范填写指南与标准模板参考</title>
+    <meta name="description" content="提供入党志愿书表格的标准样式参考、填写规范、注意事项及常见问题解答，帮助申请人规范填写入党志愿书，确保内容真实、格式正确。">
+    <meta name="keywords" content="入党志愿书,入党志愿书表格,入党志愿书填写模板,入党志愿书格式,入党申请材料">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f2f0;
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 顶部品牌栏 */
+        .header-top {
+            background-color: #a11f24;
+            color: #fff;
+            padding: 8px 0;
+            font-size: 14px;
+            border-bottom: 3px solid #7a1418;
+        }
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .header-top a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+            opacity: 0.9;
+        }
+        .header-top a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        /* 主导航 */
+        .main-header {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 64px;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            background-color: #a11f24;
+            color: #fff;
+            font-weight: bold;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: #a11f24;
+            letter-spacing: 1px;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #a11f24;
+            border-bottom-color: #a11f24;
+        }
+        /* 横幅区 */
+        .hero {
+            background: linear-gradient(135deg, #8e1d22 0%, #b02a30 100%);
+            color: #fff;
+            padding: 48px 0;
+            margin-bottom: 40px;
+        }
+        .hero .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .hero-left {
+            max-width: 700px;
+        }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            line-height: 1.3;
+        }
+        .hero p {
+            font-size: 17px;
+            opacity: 0.92;
+            margin-bottom: 24px;
+            max-width: 640px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-item strong {
+            font-size: 28px;
+            display: block;
+            font-weight: 700;
+        }
+        .stat-item span {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+        /* 快速导航卡片 */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin: -28px 0 40px;
+            position: relative;
+            z-index: 5;
+        }
+        .quick-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 22px 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            text-align: center;
+            border-top: 4px solid #a11f24;
+            transition: 0.2s;
+        }
+        .quick-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .quick-card .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .quick-card h3 {
+            font-size: 17px;
+            color: #222;
+            margin-bottom: 6px;
+        }
+        .quick-card p {
+            font-size: 14px;
+            color: #666;
+        }
+        /* 内容区域 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .main-content {
+            background: #fff;
+            border-radius: 12px;
+            padding: 36px 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #8e1d22;
+            border-left: 5px solid #a11f24;
+            padding-left: 14px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+        .intro-text {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        /* 表格样式示例 */
+        .form-sample {
+            background: #faf8f6;
+            border: 1px solid #e6ddd8;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .form-sample table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            font-size: 14px;
+        }
+        .form-sample th, .form-sample td {
+            border: 1px solid #ccc;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .form-sample th {
+            background: #f0e9e4;
+            font-weight: 600;
+            width: 120px;
+            color: #5a3e32;
+        }
+        .form-sample td {
+            color: #333;
+        }
+        .form-note {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        /* 规范列表 */
+        .rule-list {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .rule-list li {
+            padding: 12px 0 12px 30px;
+            border-bottom: 1px dashed #e5e0dc;
+            position: relative;
+            font-size: 15px;
+            color: #3d3d3d;
+        }
+        .rule-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #a11f24;
+            font-weight: bold;
+        }
+        /* 注意事项 */
+        .notice-box {
+            background: #fdf3f0;
+            border-left: 4px solid #c0392b;
+            padding: 18px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .notice-box h3 {
+            font-size: 17px;
+            color: #8e1d22;
+            margin-bottom: 8px;
+        }
+        /* 步骤 */
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            margin: 20px 0;
+        }
+        .step-list li {
+            counter-increment: step-counter;
+            padding: 10px 0 10px 40px;
+            position: relative;
+            font-size: 15px;
+            border-bottom: 1px solid #f0ece8;
+        }
+        .step-list li::before {
+            content: counter(step-counter);
+            background: #a11f24;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 12px;
+        }
+        /* 侧边栏 */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .side-widget {
+            background: #fff;
+            border-radius: 10px;
+            padding: 24px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border: 1px solid #eee7e3;
+        }
+        .side-widget h3 {
+            font-size: 17px;
+            color: #8e1d22;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0e6e0;
+        }
+        .side-list {
+            list-style: none;
+        }
+        .side-list li {
+            padding: 7px 0;
+            border-bottom: 1px dotted #e0d8d2;
+            font-size: 14px;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+        .side-list li::before {
+            content: "•";
+            color: #a11f24;
+            font-weight: bold;
+        }
+        .side-list li:last-child {
+            border-bottom: none;
+        }
+        .side-list a {
+            color: #444;
+            text-decoration: none;
+        }
+        .side-list a:hover {
+            color: #a11f24;
+            text-decoration: underline;
+        }
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 14px;
+            border-bottom: 1px solid #f0e8e3;
+            padding-bottom: 14px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+            font-size: 15px;
+            display: flex;
+            gap: 6px;
+        }
+        .faq-q::before {
+            content: "Q";
+            background: #a11f24;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: #555;
+            padding-left: 26px;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #2b2b2b;
+            color: #bbb;
+            padding: 36px 0 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 24px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col li {
+            padding: 4px 0;
+        }
+        .footer-col a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        .footer-col a:hover {
+            color: #fff;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #444;
+            padding-top: 18px;
+            color: #888;
+            font-size: 13px;
+        }
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .quick-nav {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+                padding: 10px 0;
+            }
+            .nav-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .quick-nav {
+                grid-template-columns: 1fr;
+            }
+            .main-content {
+                padding: 24px 18px;
+            }
+            .form-sample {
+                padding: 12px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-stats {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container">
+            <span>党务工作指导 · 规范材料参考</span>
+            <span style="font-size:13px;">服务热线：12371（全国党员服务）</span>
+        </div>
+    </div>
+    
+    <header class="main-header">
+        <div class="container nav-wrap">
+            <div class="logo-area">
+                <div class="logo-icon">党</div>
+                <span class="logo-text">入党材料指南</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">表格模板</a></li>
+                    <li><a href="#">填写规范</a></li>
+                    <li><a href="#">注意事项</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-left">
+                <span class="hero-badge">★ 入党志愿书填写参考平台</span>
+                <h1>入党志愿书表格规范填写指南</h1>
+                <p>面向入党申请人提供入党志愿书表格的标准样式、填写要求、内容要点和审核注意事项，帮助您规范、真实、完整地完成入党志愿书的填写。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>10+</strong>
+                        <span>核心填写要点</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>5</strong>
+                        <span>主要栏目结构</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>100%</strong>
+                        <span>官方规范参照</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- 快速导航卡片 -->
+        <section class="quick-nav" aria-label="快速入口">
+            <a href="#" style="text-decoration:none;">
+                <div class="quick-card">
+                    <div class="icon">📋</div>
+                    <h3>表格结构</h3>
+                    <p>了解各栏目构成</p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration:none;">
+                <div class="quick-card">
+                    <div class="icon">✍️</div>
+                    <h3>填写范例</h3>
+                    <p>参考标准表述</p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration:none;">
+                <div class="quick-card">
+                    <div class="icon">⚠️</div>
+                    <h3>常见错误</h3>
+                    <p>避免填写失误</p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration:none;">
+                <div class="quick-card">
+                    <div class="icon">📎</div>
+                    <h3>材料准备</h3>
+                    <p>其他相关材料</p>
+                </div>
+            </a>
+        </section>
+
+        <div class="content-grid">
+            <!-- 主体内容 -->
+            <article class="main-content">
+                <h2 class="section-title">入党志愿书表格是什么？</h2>
+                <p class="intro-text">
+                    入党志愿书是申请入党的人经过党组织一定时间的培养、考察后，由党组织发给并由申请人填写的正式文件。它记载着申请人的入党志愿、本人经历、家庭成员及主要社会关系等情况，是党组织对申请人进行审查的重要依据。表格由中央组织部统一制定，地方党委组织部门负责发放和管理。
+                </p>
+                
+                <h2 class="section-title">表格主要栏目及填写要点</h2>
+                <p class="intro-text">入党志愿书表格通常包含以下核心栏目，每一栏都有严格的填写要求：</p>
+                
+                <div class="form-sample">
+                    <table>
+                        <tr>
+                            <th>栏目名称</th>
+                            <th>填写内容说明</th>
+                        </tr>
+                        <tr>
+                            <td>入党志愿</td>
+                            <td>本人对党的认识、入党动机和思想演变过程，表明自己的入党愿望与决心。应结合自身实际，写出真情实感，避免空话套话。</td>
+                        </tr>
+                        <tr>
+                            <td>本人经历</td>
+                            <td>从7周岁或上小学时开始填写，按时间顺序填写学习和工作经历，起止时间要衔接，不能有断档。</td>
+                        </tr>
+                        <tr>
+                            <td>家庭成员情况</td>
+                            <td>填写配偶、父母、子女等直系亲属的姓名、职业、政治面貌等信息，已故的应注明。</td>
+                        </tr>
+                        <tr>
+                            <td>主要社会关系</td>
+                            <td>填写与本人关系密切的旁系亲属或亲友等，如实填写其基本情况。</td>
+                        </tr>
+                        <tr>
+                            <td>奖惩情况</td>
+                            <td>如实填写本人受到过的奖励和处分（不含共青团、少先队内部奖励），没有的可填“无”。</td>
+                        </tr>
+                        <tr>
+                            <td>入党介绍人意见</td>
+                            <td>由介绍人填写，对被介绍人的思想、品质、工作表现等进行全面评价，并表明对其入党的态度。</td>
+                        </tr>
+                    </table>
+                    <p class="form-note">* 以上为通用结构，具体以党组织发放的正式表格为准。</p>
+                </div>
+
+                <h2 class="section-title">填写核心规范</h2>
+                <ul class="rule-list">
+                    <li><strong>用笔要求：</strong>必须使用黑色钢笔或黑色签字笔填写，字迹要工整、清楚，不得使用铅笔、圆珠笔或红色墨水。</li>
+                    <li><strong>真实性：</strong>所有内容必须真实、准确，不得隐瞒、伪造任何信息，党组织会进行严格审查。</li>
+                    <li><strong>完整性：</strong>每一项都应填写完整，没有内容的栏目应注明“无”，不能留白。</li>
+                    <li><strong>严肃性：</strong>填写前应认真阅读表内说明，理解各项含义后再下笔，避免涂改。如确需修改，应在修改处由本人签名或按手印确认。</li>
+                    <li><strong>时间逻辑：</strong>个人经历的时间顺序要连贯，与相关证明材料的日期保持一致。</li>
+                </ul>
+
+                <h2 class="section-title">“入党志愿”栏目的撰写建议</h2>
+                <p>这一栏是整个表格的核心，需要写清三个层面：</p>
+                <ul class="step-list" style="list-style:none; margin-top:10px;">
+                    <li><strong>对党的认识：</strong>结合党的历史、性质、宗旨和现阶段任务，谈自己的理解，要体现认识的深度和提升过程。</li>
+                    <li><strong>入党动机：</strong>说明自己为什么想要入党，思想上是如何从朴素感情上升到理性认识的，避免只写“从小向往”等泛泛之词。</li>
+                    <li><strong>决心与表态：</strong>表明加入党组织后如何以党员标准要求自己，愿意接受党组织的考验，语气要诚恳、坚定。</li>
+                </ul>
+
+                <div class="notice-box">
+                    <h3>⚠️ 重要提示</h3>
+                    <p>填写《入党志愿书》前，党支部应指派专人与申请人谈话，详细讲解表格内容及填写方法。申请人应仔细阅读表内各栏目说明，按照要求如实填写，不得随意涂改。填写完成后，由支部大会讨论通过并报上级党组织审批。</p>
+                </div>
+
+                <h2 class="section-title">提交前的自查清单</h2>
+                <ul class="rule-list">
+                    <li>所有栏目是否都已填写完整？有无漏项、空项？</li>
+                    <li>个人经历的时间是否连贯、准确？与档案记录是否一致？</li>
+                    <li>家庭成员及主要社会关系信息是否准确完整？</li>
+                    <li>入党志愿内容是否结合个人实际，避免照抄模板？</li>
+                    <li>字迹是否清晰工整？是否有涂改？如有涂改是否按要求确认？</li>
+                    <li>照片是否按要求粘贴（一般为一寸免冠近期照片）？</li>
+                    <li>是否已签名并填写日期？</li>
+                </ul>
+            </article>
+
+            <!-- 侧边栏 -->
+            <aside class="sidebar">
+                <div class="side-widget">
+                    <h3>📌 高频问题</h3>
+                    <div class="faq-item">
+                        <p class="faq-q">入党志愿书可以打印吗？</p>
+                        <p class="faq-a">一般要求由申请人本人用黑色钢笔或签字笔手写填写，以体现严肃性。具体应遵从所在党组织的要求。</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-q">写错了可以涂改吗？</p>
+                        <p class="faq-a">应尽量避免涂改。如确需更正，应在涂改处签名或按手印，并请党组织确认，不建议自行使用修正液或胶带。</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-q">“本人经历”从何时写起？</p>
+                        <p class="faq-a">一般从上小学开始填写，按时间顺序逐段填写，起止年月要衔接，并注明证明人。</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-q">家庭成员包括哪些人？</p>
+                        <p class="faq-a">通常指本人的直系亲属，如父母、配偶、子女等。已故成员也应注明生卒年月。</p>
+                    </div>
+                </div>
+
+                <div class="side-widget">
+                    <h3>📄 相关材料参考</h3>
+                    <ul class="side-list">
+                        <li>入党申请书写法</li>
+                        <li>思想汇报撰写要求</li>
+                        <li>政审材料填写说明</li>
+                        <li>支部大会决议格式</li>
+                        <li>预备党员转正流程</li>
+                    </ul>
+                </div>
+
+                <div class="side-widget">
+                    <h3>🏛️ 组织关系</h3>
+                    <p style="font-size:14px; color:#555;">入党志愿书由所在党支部发放，填写完毕后由党支部连同入党申请书、政审材料、培训证书等一并报上级党委审批。如有疑问，请直接咨询所在单位党组织或基层党委组织部门。</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <p style="font-size:14px; line-height:1.6;">本站提供入党志愿书表格的填写参考与党务知识科普，内容仅供学习交流，具体填写要求以党组织发放的正式表格及说明为准。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">表格栏目说明</a></li>
+                        <li><a href="#">入党志愿范例</a></li>
+                        <li><a href="#">材料清单</a></li>
+                        <li><a href="#">常见问题解答</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>重要提示</h4>
+                    <ul>
+                        <li>全国党员服务热线：12371</li>
+                        <li>材料必须真实完整</li>
+                        <li>填写前请认真阅读说明</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 入党材料指南网 · 本页面信息仅供参考</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
